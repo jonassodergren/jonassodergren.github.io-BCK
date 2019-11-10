@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.58.3" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/bidra-till-dokumentationen/index.xml">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x196.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png"sizes="192x192">
+
+<title>Contribution Guidelines | JobTech Dev</title><meta property="og:title" content="Contribution Guidelines" />
+<meta property="og:description" content="How to contribute to the docs
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/bidra-till-dokumentationen/" />
+<meta property="og:site_name" content="JobTech Dev" />
+<meta itemprop="name" content="Contribution Guidelines">
+<meta itemprop="description" content="How to contribute to the docs
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Contribution Guidelines"/>
+<meta name="twitter:description" content="How to contribute to the docs
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.5e6509556dd1e9b73b68dcf58cce0d9382d09685e4d65b1cafd841386f421c93.css" as="style">
+<link href="/scss/main.min.5e6509556dd1e9b73b68dcf58cce0d9382d09685e4d65b1cafd841386f421c93.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+    <title>Contribution Guidelines | JobTech Dev</title>
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav style="background-color: #03005A" class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38" enable-background="new 0 0 39 38"><image id="image0" width="39" height="38" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAMAAABwIXKiAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAAB5wS14vy15wy53 wCt5wit3vC11vycAtgB7wit4vy56wSxuuil4wy17wS5zvCR5wS5ttht3wC51wSwAAAB5wi5gryAr qgBvuxp2vSt7vi14vyp2wSt4wi15witevABVqhV5wit9vy56wS9suh0AqgB1vSt6wi1hthh7wS96 wS94wS17xCp4wy9rvRlouRd2vyl4wS58wS14vy56wyt4wS50vip7wC55wixptB52wCp9wC96wit4 wS1VuwB3vSZqtRVxuyJ5wS14wyl4vy5vvid5vS11vid8vyt6wStjuAAAgAB7wSl2uyR3vy94wTAA gAB6vi14vy94wC14wC1xuBVbthJ3uyJ5vCp3vy58wytxvCZ4wit0vyhGuQB4wS57wixAnwB1vip5 wS5muB98wi94vy57wC51wit7wC13wy5xvih5wi54wi16wTB3vi16wS5yviZ7wS18wC54wSt8wS9N swB5wy15wis5qgAAmQB4wCl5wC19wC97wit4wy92vy57wy95wi10vCd5wi55wi52vCl3vSl4wix2 wypxviR3vy55wS55wit4wC55vid3vyl4wC1zuSB7wS57wC9tvSRotxh3wS57vSR5wS94wy15wits uSdzvi18vSx5wy11vyh8wzH///8XrJ3cAAAAoXRSTlMAuejUvppySAe/7Iwl/qwqqBz0bwHEEAYe Nk9oj/LVEwxw49oaA1nYFcW0iIH2HxZjse344cY3u8ARkfvZZg9JGC3Ce+QnZTtr4hIEoDj8wQKC 69dVJA48bt/9PWxAC5fpCHrOGY5kpmDcoT/R7tZ2sC/x93f1CoOJCQVquu/5+pvQry7Ip0U+eX8r y82rlU58rii44CMgrU3mnbchM2mHTE6Chz8AAAABYktHRKKw3d+MAAAAB3RJTUUH4wsJFhMHsfy2 5AAAAhlJREFUOMuNk/0jU1EYx5+2lsLQTJMmwtaLNM0KoZS81EqkVZQia5X0JmJKU4gUKZVe5fyn 3ft9zq4zq9nzw+73+z2fe3fuc55LpNYmk3mzZUvKVtqgtglUalp6UpwQ1ozMpDiNzNqeFCeELdue FCdEzo7/cI7cnXm7nPkGuLsg0S4L9xRFweKShO/tcpskuLcwcYf27ZfgAXti0FUqwWzaoA4yV3Yo JvWUHzZ7K3xHSo9GE3slg1UKVX2sxmhGbZ2Dw+M+DlIM7IQ3pr/meo5PlsGeimINYl2dbuSFJrbN 7FpEXJ05ixV/Ktw5mPOt8Zy40Ia1dpiLeg9dHXLJcilw+crVTunKwdV3wVzT5HX5T928iRs32ff0 wmbA3NJUHw9b0Hj52wy6YULQd4iCnN5Vhusekn6Y+9ADRG6IB+rR8Ps/hC6B9hI9gnisck8QDbKp 0PVTIifCIZVrG0b2DGYAmmgE11GVC3MzxhQuTM9xfaFyzYjG+dkvdR0h6kYYUYdsAtEr6HToTu04 bFCv17BJq7KVPOgpTU1zA99EsbEcDmbgZo1B4C6Imrd+LMyZ2b/ju97DhHQ5L0++YyH0YfFjRLpJ 5TjEJ10X+P4xV+38uCWYz2y+mOKwSv5q59jNyq1/LVqHLYfVk+4yZim4bFUo29qn/U0f/CyltwHn d0kN//AoueenaP1FMfV7xbLU/2fVEZvSilP//QtRNozWDjvhlAAAACV0RVh0ZGF0ZTpjcmVhdGUA MjAxOS0xMS0wOVQyMjoxOTowNyswMzowMNBXvEMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMTEt MDlUMjI6MTk6MDcrMDM6MDChCgT/AAAAAElFTkSuQmCC" /></svg></span><span class="text-uppercase font-weight-bold">JobTech Dev</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+
+<a style="color: white;" href="/about/" ><span>Om</span></a>
+
+    	</li>
+
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+
+<a style="color: white;" href="/docs/" ><span class="active">Dokumentation</span></a>
+
+    	</li>
+
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+
+<a style="color: white;" href="/blog/" ><span>Blogg</span></a>
+
+    	</li>
+
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+
+<a style="color: white;" href="/community/" ><span>Community</span></a>
+
+    	</li>
+
+			
+      
+		</ul>
+	</div>
+  
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/no/">Norsk</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Dokumentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Introduktion</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-overview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-getting-started-example-page" href="/docs/getting-started/example-page/">Example Page</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/use/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Hitta öppna Data</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-use">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-use-api-jobsearch" href="/docs/use/api/jobsearch/">API - Jobsearch</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/examples/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Exempeltjänster</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-examples">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/bidra-till-dokumentationen/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-bidra-till-dokumentationen">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/jobtechswe/edit/master/content/en/docs/Bidra%20till%20dokumentationen/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/jobtechswe/issues/new?title=Contribution%20Guidelines" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/jobtechswe/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#quick-start-with-netlify">Quick start with Netlify</a></li>
+<li><a href="#updating-a-single-page">Updating a single page</a></li>
+<li><a href="#previewing-your-changes-locally">Previewing your changes locally</a></li>
+<li><a href="#creating-an-issue">Creating an issue</a></li>
+<li><a href="#useful-resources">Useful resources</a></li>
+</ul></li>
+</ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+            
+<div class="td-content">
+	<h1>Contribution Guidelines</h1>
+	<div class="lead">How to contribute to the docs</div>
+	
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p>These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines &ldquo;as is&rdquo; or adapt them with your own instructions: for example, other deployment options, information about your doc project&rsquo;s file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. <a href="https://github.com/kubeflow/website/blob/master/README.md" target="_blank">Kubeflow</a> has a great example.</p>
+
+<p>Don&rsquo;t forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.</p>
+
+</div>
+
+
+<p>We use <a href="https://gohugo.io/" target="_blank">Hugo</a> to format and generate our website, the
+<a href="https://github.com/google/docsy" target="_blank">Docsy</a> theme for styling and site structure,
+and <a href="https://www.netlify.com/" target="_blank">Netlify</a> to manage the deployment of the site.
+Hugo is an open-source static site generator that provides us with templates,
+content organisation in a standard directory structure, and a website generation
+engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.</p>
+
+<p>All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+<a href="https://help.github.com/articles/about-pull-requests/" target="_blank">GitHub Help</a> for more
+information on using pull requests.</p>
+
+<h2 id="quick-start-with-netlify">Quick start with Netlify</h2>
+
+<p>Here&rsquo;s a quick guide to updating the docs. It assumes you&rsquo;re familiar with the
+GitHub workflow and you&rsquo;re happy to use the automated preview of your doc
+updates:</p>
+
+<ol>
+<li>Fork the <a href="https://github.com/google/docsy-example" target="_blank">Goldydocs repo</a> on GitHub.</li>
+<li>Make your changes and send a pull request (PR).</li>
+<li>If you&rsquo;re not yet ready for a review, add &ldquo;WIP&rdquo; to the PR name to indicate
+it&rsquo;s a work in progress. (<strong>Don&rsquo;t</strong> add the Hugo property
+&ldquo;draft = true&rdquo; to the page front matter, because that prevents the
+auto-deployment of the content preview described in the next point.)</li>
+<li>Wait for the automated PR workflow to do some checks. When it&rsquo;s ready,
+you should see a comment like this: <strong>deploy/netlify — Deploy preview ready!</strong></li>
+<li>Click <strong>Details</strong> to the right of &ldquo;Deploy preview ready&rdquo; to see a preview
+of your updates.</li>
+<li>Continue updating your doc and pushing your changes until you&rsquo;re happy with
+the content.</li>
+<li>When you&rsquo;re ready for a review, add a comment to the PR, and remove any
+&ldquo;WIP&rdquo; markers.</li>
+</ol>
+
+<h2 id="updating-a-single-page">Updating a single page</h2>
+
+<p>If you&rsquo;ve just spotted something you&rsquo;d like to change while using the docs, Docsy has a shortcut for you:</p>
+
+<ol>
+<li>Click <strong>Edit this page</strong> in the top right hand corner of the page.</li>
+<li>If you don&rsquo;t already have an up to date fork of the project repo, you are prompted to get one - click <strong>Fork this repository and propose changes</strong> or <strong>Update your Fork</strong> to get an up to date version of the project to edit. The appropriate page in your fork is displayed in edit mode.</li>
+<li>Follow the rest of the <a href="#quick-start-with-netlify">Quick start with Netlify</a> process above to make, preview, and propose your changes.</li>
+</ol>
+
+<h2 id="previewing-your-changes-locally">Previewing your changes locally</h2>
+
+<p>If you want to run your own local Hugo server to preview your changes as you work:</p>
+
+<ol>
+<li>Follow the instructions in <a href="/docs/getting-started">Getting started</a> to install Hugo and any other tools you need. You&rsquo;ll need at least <strong>Hugo version 0.45</strong> (we recommend using the most recent available version), and it must be the <strong>extended</strong> version, which supports SCSS.</li>
+
+<li><p>Fork the <a href="https://github.com/google/docsy-example" target="_blank">Goldydocs repo</a> repo into your own project, then create a local copy using <code>git clone</code>. Don’t forget to use <code>--recurse-submodules</code> or you won’t pull down some of the code you need to generate a working site.</p>
+
+<pre><code>git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
+</code></pre></li>
+
+<li><p>Run <code>hugo server</code> in the site root directory. By default your site will be available at <a href="http://localhost:1313/" target="_blank">http://localhost:1313/</a>. Now that you&rsquo;re serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.</p></li>
+
+<li><p>Continue with the usual GitHub workflow to edit files, commit them, push the
+changes up to your fork, and create a pull request.</p></li>
+</ol>
+
+<h2 id="creating-an-issue">Creating an issue</h2>
+
+<p>If you&rsquo;ve found a problem in the docs, but you&rsquo;re not sure how to fix it yourself, please create an issue in the <a href="https://github.com/google/docsy-example/issues" target="_blank">Goldydocs repo</a>. You can also create an issue about a specific page by clicking the <strong>Create Issue</strong> button in the top right hand corner of the page.</p>
+
+<h2 id="useful-resources">Useful resources</h2>
+
+<ul>
+<li><a href="wherever it goes" target="_blank">Docsy user guide</a>: All about Docsy, including how it manages navigation, look and feel, and multi-language support.</li>
+<li><a href="https://gohugo.io/documentation/" target="_blank">Hugo documentation</a>: Comprehensive reference for Hugo.</li>
+<li><a href="https://guides.github.com/activities/hello-world/" target="_blank">Github Hello World!</a>: A basic introduction to GitHub concepts and workflow.</li>
+</ul>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+</div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="py-5 row d-print-none" style="background-color: #03005A;">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        
+  <p class="mt-2"><a href="https://arbetsformedlingen.se/om-webbplatsen/oppna-data" style="color: #FFFFFF">Öppna data hos Arbetsförmedlingen</a></p>
+  <p class="mt-2"><a href="/community" style="color: #FFFFFF">Kontakt</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
